@@ -52,6 +52,7 @@ const Signup = () => {
 				  };
 			const response = await axios.post(url, data);
 			if (response.status === 200) {
+				console.log("Token in production:", response.data.token);
 				login(response.data.token);
 				setSuccessMessage(response.data.message || "Success!");
 			} else {
