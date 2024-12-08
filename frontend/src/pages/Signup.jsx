@@ -9,6 +9,7 @@ const Signup = () => {
 	const [successMessage, setSuccessMessage] = useState("");
 	const navigate = useNavigate();
 	const { login } = useAuth();
+	const appUrl = import.meta.env.VITE_APP_URL;
 	const [formData, setFormData] = useState({
 		firstName: "",
 		lastName: "",
@@ -36,7 +37,7 @@ const Signup = () => {
 		}
 
 		try {
-			const url = "http://localhost:5000/api/signup";
+			const url = `{appUrl}/api/signup`;
 
 			const data = newUser
 				? {
