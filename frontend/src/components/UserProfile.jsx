@@ -12,16 +12,18 @@ const UserProfile = ({
 				<FaUserCircle className='w-28 h-28 mb-2 text-gray-400' />
 				<h2 className='font-bold text-gray-700'>
 					{profileState.editable ? (
-						<div className='flex flex-row'>
+						<div className='flex flex-col md:flex-row'>
 							<input
 								type='text'
 								name='firstName'
+								placeholder = 'First Name'
 								value={formData.firstName || ""}
 								onChange={handleInputChange}
 								className='border-b-2'
 							/>
 							<input
 								type='text'
+								placeholder = 'Last Name'
 								name='lastName'
 								value={formData.lastName}
 								onChange={handleInputChange}
