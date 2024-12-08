@@ -115,5 +115,7 @@ Headers: `Authorization: Bearer <token>`
 `models/User.js`: MongoDB schema for users.
 `routes/blogRoutes.js`: Routes for handling blog post and comment API calls.
 `routes/authRoutes.js`: Routes for authentication (login, register).
+
+You can see the live demo at https://blogger-gefd.onrender.com/
  
 Feel free to use!
