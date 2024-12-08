@@ -37,7 +37,7 @@ const Signup = () => {
 		}
 
 		try {
-			const url = `{appUrl}/api/signup`;
+			const url = `${appUrl}/api/signup`;
 
 			const data = newUser
 				? {
