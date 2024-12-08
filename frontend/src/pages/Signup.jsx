@@ -9,7 +9,7 @@ const Signup = () => {
 	const [successMessage, setSuccessMessage] = useState("");
 	const navigate = useNavigate();
 	const { login } = useAuth();
-	const appUrl = import.meta.env.VITE_APP_URL;
+	const appUrl = import.meta.env.VITE_API_URL;
 	const [formData, setFormData] = useState({
 		firstName: "",
 		lastName: "",
