@@ -22,7 +22,7 @@ const UserProfile = ({
 							/>
 							<input
 								type='text'
-								name='firstName'
+								name='lastName'
 								value={formData.lastName}
 								onChange={handleInputChange}
 								className='border-b-2'
