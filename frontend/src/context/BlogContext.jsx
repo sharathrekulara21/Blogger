@@ -6,10 +6,11 @@ const BlogContext = createContext();
 const BlogProvider = ({ children }) => {
 	const [blogs, setBlogs] = useState([]);
 	const [loading, setLoading] = useState(true);
+	const appUrl = import.meta.env.VITE_API_URL
 
 	useEffect(() => {
 		// Fetch the blogs data when the component mounts
-		fetch("http://localhost:5000/api/blogs")
+		fetch(`${appUrl}/api/blogs`)
 			.then((response) => response.json())
 			.then((data) => {
 				setBlogs(data);
