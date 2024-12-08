@@ -51,7 +51,7 @@ const Signup = () => {
 						password: formData.password,
 				  };
 			const response = await axios.post(url, data);
-			console.log(response);
+			console.log('response from production: ',response);
 			if (response.status === 200) {
 				console.log("Token in production:", response.data.token);
 				login(response.data.token);
